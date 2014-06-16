@@ -1,0 +1,28 @@
+name: Homes
+version: 1.2
+description: Allows players to set and teleport to their homes.
+author: QHencekl
+main: io.github.qhenckel.homes.Home
+commands:
+  home:
+    permission: home.home
+    usage: /home [home name]
+  sethome:
+    permission: home.set
+    usage: /sethome [home name]
+  delhome:
+    permission: home.delete
+    usage: /delhome [home name]
+  homelist:
+    permission: home.list
+    usage: /homelist
+permissions:
+  home.home:
+    description: teleport to a home.
+    default: true
+  home.set:
+    description: Create a home.
+    default: true
+  home.del:
+    description: Delete a home.
+    default: true
